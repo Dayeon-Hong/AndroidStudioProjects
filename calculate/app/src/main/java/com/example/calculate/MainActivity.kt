@@ -46,6 +46,9 @@ class MainActivity : AppCompatActivity() {
         btnDiv = findViewById<Button>(R.id.BtnDiv)
         Result = findViewById<TextView>(R.id.Result)
 
+        // 연산
+
+
         btnAdd.setOnTouchListener { View, MotionEvent ->
             num1 = edit1.text.toString()
             num2 = edit2.text.toString()
@@ -78,12 +81,14 @@ class MainActivity : AppCompatActivity() {
             false
         }
 
-        // 숫자 계산에 버튼 추가
+
+        // 숫자 버튼 -
+
         for (i in 0..9) {
             numButtons.add(findViewById<Button>(btnIDs[i]))
         }
 
-        for (i in 0..btnIDs.size - 1) {
+        for (i in 0..btnIDs.size - 1 step 1) {
             numButtons[i].setOnClickListener {
                 // 숫자 1, 숫자 2 입력창에 숫자 추가
                 if (edit1.isFocused == true) {
