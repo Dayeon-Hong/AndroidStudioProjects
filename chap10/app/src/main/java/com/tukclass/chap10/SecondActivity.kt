@@ -1,19 +1,17 @@
 package com.tukclass.chap10
 
-import android.app.Activity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 
-class SecondActivity : Activity() {
-
-    override fun onCreate(savedInstanceState: Bundle?){
+class SecondActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.second)
 
-        var btnReturn = findViewById<Button>(R.id.btnReturn)
-        btnReturn.setOnClickListener {
+        val btnReturn1 = findViewById<Button>(R.id.btnReturn1)
+        btnReturn1.setOnClickListener {
             finish()
         }
     }
-
 }

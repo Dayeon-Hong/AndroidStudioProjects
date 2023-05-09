@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="#00FF00"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
     <Button
-        android:id="@+id/btnReturn"
+        android:id="@+id/btnReturn1"
         android:text="돌아가기"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
